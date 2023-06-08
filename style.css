@@ -235,6 +235,17 @@ a:hover{
     .about{
         height: fit-content;
     }
+    .p-about{
+
+    padding: 1em;
+
+    width: 90vw;
+
+    line-height: 2em;
+
+    font-size: 20px;
+
+}
     .skills{
         margin-bottom: 53em;
     }
