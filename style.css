@@ -257,13 +257,5 @@ a:hover{
         z-index: 1;
       }
       
-    
-    /*burger menu*/
-    .menu-mobile{
-        display: grid;
-        place-items: center;
-        cursor: pointer;
-        margin: 1em;
-    }
   }
   
