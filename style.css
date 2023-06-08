@@ -188,7 +188,7 @@ a:hover{
     #navbar{
         font-family: 'Ubuntu', sans-serif;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         width: 100vw;
         text-align:center;
