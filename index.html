@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portoflio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <nav id="navbar" >
+        <a href="#"><h1>Jamaica</h1></a>
+       <div class="menu">
+        
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+       </div>
+        <div class="social">
+            <span>
+                <a href="https://www.facebook.com/kayla.owakan" target="_blank"><img class="nav-img" src="./image/icons8-facebook-48.png" alt="facebook"></a>
+                <a href="" target="_blank"><img class="nav-img" src="./image/icons8-twitter-48.png" alt="twitter"></a>
+                <a href="jamaicaowakan21@gmail.com" target="_blank"><img class="nav-img" src="./image/icons8-gmail-48.png" alt="gmail"></a>
+            </span>
+        </div>
+        <div class="menu-mobile">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    
+    <section class="home" id="home">
+        <div class="content-home">
+            <div class="image-content">
+                <a href="#"><img class="main-img" src="./image/maica.jpg" alt=""></a>
+            </div>
+        
+            <div class="text-content-container">
+                <div class="text-content">
+                    <h3 class="h3-home">Hello! I'm Jam,</h3>
+                    <h2 class="h2-home">I provide value by design.</h2>
+                    <p class="p-home">Graphic Designer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="cutting-hr" >
+
+    <section class="about" id="about" >
+        <h2 class="h2-sections" >About</h2>
+        <p class="p-about" >Hello there! I'm Jamaica Rose C. Owakan. I am 23 years old from Tabunok, Talisay City, Cebu. A passionate graphic designer with a love for all things visual. I'm proficient in a range of design software and techniques, allowing me to bring my creative visions to life. I have experience in editing for social media banner ,tarpaulin and obs studio for live streaming.</p>
+    </section>
+    
+<hr>
+    <section class="skills" id="skills">
+<h2 class="h2-sections" >Skills</h2>
+<span class="span-skills" >
+    <div class="skills-img">
+        <a class="skills-img" href="https://icons8.com/icons" target="_blank" ><img src="./image/icons8-illustrator-144.png" alt=""><p class="p-skills" >Illustrator</p></a>
+    </div>
+   <div class="skills-img">
+    <a class="skills-img" href="https://icons8.com/icons" target="_blank" ><img src="./image/icons8-canva-144.png" alt=""><p class="p-skills" >Canva</p></a>
+   </div>
+    <div class="skills-img">
+        <a class="skills-img" href="https://icons8.com/icons" target="_blank" ><img src="./image/icons8-obs-studio-150.png" alt=""><p class="p-skills" >Obs Studio</p></a>
+    </div>
+    <div class="skills-img">
+        <a class="skills-img" href="https://icons8.com/icons" target="_blank" ><img src="./image/icons8-figma-144.png" alt=""><p class="p-skills" >Figma</p></a>
+    </div>
+    <div class="skills-img">
+        <a class="skills-img" href="https://icons8.com/icons" target="_blank" ><img src="./image/icons8-photoshop-144.png" alt=""><p class="p-skills" >Photoshop</p></a>
+    </div>
+
+ 
+    </section>
+    <div class="social-footer">
+        <span>
+            <a href="https://www.facebook.com/kayla.owakan" target="_blank"><img class="nav-img" src="./image/icons8-facebook-48.png" alt="facebook"></a>
+            <a href="" target="_blank"><img class="nav-img" src="./image/icons8-twitter-48.png" alt="twitter"></a>
+            <a href="jamaicaowakan21@gmail.com" target="_blank"><img class="nav-img" src="./image/icons8-gmail-48.png" alt="gmail"></a>
+        </span>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+    const navbarScroll = () => {
+  const navbar = document.getElementById('navbar');
+  const content = document.getElementById('home');
+  const navbarHeight = navbar.offsetHeight;
+  const contentOffset = content.offsetTop;
+
+  if (window.pageYOffset > contentOffset - navbarHeight) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+};
+
+window.addEventListener('scroll', navbarScroll);
+
+// Additional code to change navbar color back when scrolling up or reaching the home section
+window.addEventListener('scroll', () => {
+  const navbar = document.getElementById('navbar');
+  const homeSection = document.getElementById('home');
+  const navbarHeight = navbar.offsetHeight;
+  const homeOffset = homeSection.offsetTop;
+
+  if (window.pageYOffset === 0 || window.pageYOffset < homeOffset) {
+    navbar.classList.remove('scrolled');
+  } else if (window.pageYOffset + window.innerHeight >= document.documentElement.scrollHeight) {
+    navbarScroll();
+  }
+});
+
+    </script>
+</body>
+</html>
