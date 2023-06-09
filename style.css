@@ -187,11 +187,10 @@ a:hover{
 @media (max-width: 900px) {
     #navbar{
         font-family: 'Ubuntu', sans-serif;
-        display: flex;
-        align-items: center;
-
+        display: grid;
+        grid-template-columns: auto auto;
         text-align:center;
-        padding: 1em;
+        height: fit-content;
         position: fixed;
         background-color: #b4dbe2;
         box-shadow: 1px 2px 2px #eee;
